@@ -1,8 +1,5 @@
----
+on: [push]
 name: Deploy Logic App
-
-on:
-  workflow_dispatch:
 
 jobs:
   deploy:
