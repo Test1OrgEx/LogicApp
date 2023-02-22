@@ -13,13 +13,6 @@ jobs:
       RESOURCE_GROUP: 'Logic-App'
 
     steps:
-      - uses: actions/checkout@v2
-
-      - uses: actions/download-artifact@v2
-        with:
-          name: logic-app-package
-          path: logic-app-package
-
       - uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
