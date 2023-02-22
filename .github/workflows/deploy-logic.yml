@@ -24,7 +24,7 @@ jobs:
           scope: resourcegroup
           subscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
           resourceGroupName: ${{ env.RESOURCE_GROUP }}
-          template: ./arm-template.json
+          template: ./armtemplate.json
           deploymentMode: Incremental
           parameters: logicAppName=${{ env.LOGIC_APP_NAME }} storageAccountName=${{ env.STORAGE_ACCOUNT_NAME }} appServicePlanName=${{ env.ASP_NAME }} insightsName=${{ env.INSIGHTS_NAME }} location=${{ env.LOCATION }}
 
